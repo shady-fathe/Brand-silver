@@ -50,7 +50,7 @@ section {
 }
 /* section One  */
 .Hero-section {
-  background-image: url("logo.jpg");
+  background-image: url("photos/logo.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -135,6 +135,6 @@ letter-spacing: 0.5px;
 /* Media */
 @media (max-width: 600px) {
   .Hero-section{
-background-image: url("logo-phone.png");
+background-image: url("photos/logo-phone.png");
   }
 }
