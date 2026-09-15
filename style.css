@@ -15,7 +15,7 @@ body {
   text-align: center;
   padding-top: 70px;
 }
-
+/* Header */
 header {
   width: 100%;
   position: fixed;
@@ -66,7 +66,7 @@ section {
   background-position: center;
   height: calc(100vh - 70px);
 }
-
+/* Section Best Selling Products */
 .section-Best-Selling {
   display: flex;
   flex-direction: column;
@@ -146,7 +146,7 @@ section {
   border: none;
   border-radius: var(--min-border-R);
 }
-
+/* Section About */
 .section-About {
   margin-top: 15px;
 }
@@ -179,7 +179,7 @@ section {
   margin: 5px;
   letter-spacing: 5px;
 }
-
+/* Section Reference */
 .section-Refrance h1 {
   margin: 30px;
   font-size: 38px;
@@ -218,6 +218,7 @@ section {
   border-radius: 25px 25px 0px 0px;
 }
 
+/* Section Contact */
 .section-contact {
   padding: 15px;
   width: 100%;
