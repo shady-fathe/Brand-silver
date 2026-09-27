@@ -13,7 +13,7 @@
 body {
   background-color: var(--mainbac);
   text-align: center;
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 /* Header */
 header {
@@ -23,8 +23,13 @@ header {
   padding: 15px;
   z-index: 10;
   background-color: #fff;
-}
+opacity: 0;
+transition: ease-out 0.5s all;
 
+}
+.logo{
+  color:rgb(216, 213, 213);
+}
 header nav {
   width: 100%;
   display: flex;
@@ -64,7 +69,7 @@ section {
   background-image: url("photos/logo.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 70px);
+  height: 100vh;
 }
 /* Section Best Selling Products */
 .section-Best-Selling {
@@ -77,8 +82,8 @@ section {
   margin: 20px;
   font-size: 40px;
 }
-
 .continer-product {
+
   width: 300px;
   padding: 5px;
   display: flex;
@@ -89,12 +94,71 @@ section {
   background-color: #fff;
 }
 
-.continer-product img {
+.product-img ,.product-img-Rec{
   width: 90%;
-  height: 270px;
-  border-radius: var(--min-border-R);
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+transition: ease-out 0.5s all;
+}
+/* images for section Best Silling */
+.continer-product:nth-child(1) .product-img{
+  background-image: url('Products/T-shirts/product-0-0.png');
 }
 
+
+.continer-product:nth-child(2) .product-img{
+  background-image: url('Products/T-shirts/product-1-0.png');
+}
+.continer-product:nth-child(2) .product-img:hover{
+  background-image: url('Products/T-shirts/product-1-3.png');
+
+}
+
+
+.continer-product:nth-child(3) .product-img{
+  background-image: url('Products/T-shirts/product-2-0.png');
+}
+
+
+.continer-product:nth-child(4) .product-img{
+  background-image: url('Products/T-shirts/product-3-0.png');
+}
+.continer-product:nth-child(4) .product-img:hover{
+  background-image: url('Products/T-shirts/product-3-1.png');
+}
+
+
+/* images for section Best Recommended*/
+
+.continer-product:nth-child(1) .product-img-Rec{
+  background-image: url('Products/T-shirts/product-4-0.png');
+}
+
+
+.continer-product:nth-child(2) .product-img-Rec{
+  background-image: url('Products/T-shirts/product-5-0.png');
+}
+.continer-product:nth-child(2) .product-img-Rec:hover{
+  background-image: url('Products/T-shirts/product-5-1.png');
+
+}
+
+
+.continer-product:nth-child(3) .product-img-Rec{
+  background-image: url('Products/T-shirts/product-6-0.png');
+}
+
+
+.continer-product:nth-child(4) .product-img-Rec{
+  background-image: url('Products/T-shirts/product-3-0.png');
+}
+.continer-product:nth-child(4) .product-img-Rec:hover{
+  background-image: url('Products/T-shirts/product-3-1.png');
+}
+
+/* bar colors */
 .card-bar-colors {
   width: 100%;
   height: auto;
@@ -102,13 +166,11 @@ section {
   justify-content: center;
   gap: 10px;
 }
-
 .color-product {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
-
 .color-product:nth-child(1) {
   background-color: black;
 }
@@ -146,35 +208,32 @@ section {
   border: none;
   border-radius: var(--min-border-R);
 }
+.btn-add-card:hover{
+  cursor: pointer;
+}
 /* Section About */
 .section-About {
   margin-top: 15px;
 }
-
 .About-body {
   margin-top: 30px;
 }
-
 .About-Continer {
   display: flex;
   flex-wrap: wrap;
 }
-
 .About-Continer img {
   width: 50%;
-  height: auto;
+  height: 100vh;
 }
-
 .About-Continer:nth-child(2) {
   direction: rtl;
 }
-
 .About-continer-text {
   width: 50%;
   align-content: center;
   text-align: center;
 }
-
 .About-continer-text p {
   margin: 5px;
   letter-spacing: 5px;
@@ -184,12 +243,10 @@ section {
   margin: 30px;
   font-size: 38px;
 }
-
 .Refrance-body {
   padding: 15px;
   position: relative;
 }
-
 .continer-Scroll {
   display: flex;
   flex-wrap: nowrap;
@@ -198,32 +255,39 @@ section {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
-
 .continer-Scroll::-webkit-scrollbar {
   display: none;
 }
-
 .card-Refrance {
-  width: 300px;
+  width: fit-content;
   height: 450px;
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-shrink: 0;
   border-radius: var(--min-border-R);
   background-color: #fff;
 }
-
 .card-Refrance img {
   width: 100%;
-  height: 50%;
-  border-radius: 25px 25px 0px 0px;
+  height: 100%;
+  border-radius: 25px;
 }
+.card-Refrance video{
+  width: fit-content;
+  height: 100%;
+  border-radius: 25px;
 
+}
+.card-Refrance-text{
+padding: 15px;
+}
 /* Section Contact */
 .section-contact {
   padding: 15px;
   width: 100%;
 }
-
 .section-contact h1 {
   margin: 15px;
 }
@@ -232,19 +296,17 @@ section {
   width: 100%;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   border-radius: var(--min-border-R);
   background-color: #fff;
 }
-
 .div-Social {
+  width: 50%;
   display: flex;
   border-radius: var(--min-border-R);
-  width: 50%;
   background-color: var(--mainbac);
 }
-
 .Social-icon {
   width: 100%;
   height: fit-content;
@@ -253,7 +315,6 @@ section {
   flex-direction: column;
   gap: 10px;
 }
-
 .content-Social {
   width: 100%;
   padding: 5px;
@@ -264,15 +325,12 @@ section {
   gap: 10px;
   border-radius: var(--min-border-R);
 }
-
 .content-Social:nth-child(1) i {
-  color: rgb(0, 255, 0);
+  color: rgb(0, 255, 0);0
 }
-
 .content-Social:nth-child(2) i {
   color: rgb(0, 0, 255);
 }
-
 .content-Social:nth-child(3) i {
   background: linear-gradient(
     45deg,
@@ -286,11 +344,9 @@ section {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-
 .content-Social:nth-child(4) i {
   color: black;
 }
-
 .continer-contact {
   width: 40%;
   height: 100%;
@@ -298,7 +354,7 @@ section {
   background-color: var(--mainbac);
   border-radius: var(--min-border-R);
 }
-
+/* Form */
 form {
   display: flex;
   flex-direction: column;
