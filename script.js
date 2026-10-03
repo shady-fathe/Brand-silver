@@ -1,4 +1,7 @@
 let Header = document.querySelector("header");
+let cart = document.querySelector(".Shop-cart");
+let btncart = document.querySelector(".btn-cart");
+let btnclosecart = document.querySelector(".btn-close-cart");
 // let productsImges = [
 //     "Products/T-shirts/product-0-0.png",
 //     "Products/T-shirts/product-1-0.png",
@@ -43,23 +46,30 @@ let Header = document.querySelector("header");
 
 
 // funtion to change the opacty for header  
-document.onscroll =  function(){
-if(scrollY >= 10 ){
-    Header.style.opacity = 1
-    Header.style.pointerEvents = "auto"
-}else{    
-    Header.style.opacity = 0
-    Header.style.pointerEvents = "none"
+// document.onscroll =  function(){
+// if(scrollY >= 10 ){
+//     Header.style.opacity = 1
+//     Header.style.pointerEvents = "auto"
+// }else{    
+//     Header.style.opacity = 0
+//     Header.style.pointerEvents = "none"
+// }
+// }
+
+
+// cart functions open and close 
+
+btncart.onclick = ()=>{
+    cart.style.opacity = 1
+    cart.style.pointerEvents = "auto"
+
+    btnclosecart.onclick = ()=>{
+        cart.style.opacity = 0
+        cart.style.pointerEvents = "none"
 }
+
+
 }
-
-
-
-
-
-
-
-
 
 
 

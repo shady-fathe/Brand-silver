@@ -23,7 +23,7 @@ header {
   padding: 15px;
   z-index: 10;
   background-color: #fff;
-opacity: 0;
+/* opacity: 0; */
 transition: ease-out 0.5s all;
 
 }
@@ -53,10 +53,23 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.Shop-cart{
+background-color: silver;
+width: 300px;
+height: 100vh;
+position: fixed;
+right: 0;
+opacity: 0;
+pointer-events: none;
+z-index: 10;
+transition: ease-in-out 0.5s all;
+}
+.btn-close-cart:hover{
+  cursor: pointer;
+}
 section {
   width: 100%;
 }
-
 .section-body {
   display: flex;
   justify-content: space-around;
@@ -83,7 +96,6 @@ section {
   font-size: 40px;
 }
 .continer-product {
-
   width: 300px;
   padding: 5px;
   display: flex;
@@ -171,7 +183,7 @@ transition: ease-out 0.5s all;
   height: 30px;
   border-radius: 50%;
 }
-.color-product:nth-child(1) {
+/* .color-product:nth-child(1) {
   background-color: black;
 }
 
@@ -185,7 +197,7 @@ transition: ease-out 0.5s all;
 
 .color-product:nth-child(4) {
   background-color: rgb(75, 149, 192);
-}
+} */
 
 .card-product-body {
   display: flex;
@@ -196,7 +208,12 @@ transition: ease-out 0.5s all;
   width: 100%;
   height: auto;
 }
-
+.product-salary{
+font-size:18px;  
+}
+.product-salary span{
+color: green;
+}
 .card-product-body h3,
 .card-product-body p {
   letter-spacing: 0.5px;
@@ -407,6 +424,9 @@ input {
 }
 
 @media (max-width: 746px) {
+  .continer-product {
+  width: 47%;
+}
   .contact-body {
     display: flex;
     flex-direction: column;
@@ -437,4 +457,14 @@ input {
   .Hero-section {
     background-image: url("photos/logo-phone.png");
   }
+  .continer-product {
+    width: 230px;
+  }
+  
+}
+@media (max-width: 530px){
+  
+  .continer-product {
+    width: 300px;
+}
 }
