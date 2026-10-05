@@ -300,77 +300,52 @@ color: green;
 .card-Refrance-text{
 padding: 15px;
 }
-/* Section Contact */
-.section-contact {
-  padding: 15px;
+
+/* footer */
+footer{
   width: 100%;
+  height: 300px;
+  background-color: rgba(75, 63, 63, 0.493);
+  display: flex;
+  justify-content: space-around;
 }
-.section-contact h1 {
-  margin: 15px;
+.footer-links{
+  width: 200px;
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 15px;
+}
+.div-links{
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+}
+.div-links a{
+  color: rgb(90, 90, 90);
+font-size: 17px;
+  width: fit-content;
+}
+.btn-contact{
+  width: 98%;
+  padding: 10px;
+  background-color: var(--mainbac);
+  border-radius: var(--min-border-R);
+  border: none;
 }
 
-.contact-body {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: var(--min-border-R);
-  background-color: #fff;
-}
-.div-Social {
-  width: 50%;
-  display: flex;
-  border-radius: var(--min-border-R);
-  background-color: var(--mainbac);
-}
-.Social-icon {
-  width: 100%;
-  height: fit-content;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.content-Social {
-  width: 100%;
-  padding: 5px;
-  height: auto;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: var(--min-border-R);
-}
-.content-Social:nth-child(1) i {
-  color: rgb(0, 255, 0);0
-}
-.content-Social:nth-child(2) i {
-  color: rgb(0, 0, 255);
-}
-.content-Social:nth-child(3) i {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-.content-Social:nth-child(4) i {
-  color: black;
-}
+
+
 .continer-contact {
   width: 40%;
   height: 100%;
   padding: 5px;
   background-color: var(--mainbac);
   border-radius: var(--min-border-R);
+display: none;
 }
+
 /* Form */
 form {
   display: flex;
